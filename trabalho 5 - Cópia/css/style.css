@@ -1,0 +1,130 @@
+@import url("https://fonts.google.com/specimen/Big+Shoulders+Display");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap");
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+html, body {
+  min-width: 100%;
+  min-height: 100%;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem 0 2rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .section {
+  width: 90%;
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2rem 3rem 2rem 2rem;
+  color: white;
+}
+
+.main .section .header {
+  font-weight: 700;
+  font-size: 250%;
+}
+
+.main .section .description {
+  font-size: 110%;
+  font-weight: 500;
+}
+
+.main .section button {
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  background-color: white;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.main .firstSection {
+  background-color: var(--bright-orange);
+}
+
+.main .firstSection button {
+  color: var(--bright-orange);
+}
+
+.main .secondSection {
+  background-color: var(--dark-cyan);
+}
+
+.main .secondSection button {
+  color: var(--dark-cyan);
+}
+
+.main .thirdSection {
+  background-color: var(--very-dark-cyan);
+}
+
+.main .thirdSection button {
+  color: var(--very-dark-cyan);
+}
+
+@media only screen and (min-width: 376px) {
+  .main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 60%;
+    height: 35rem;
+  }
+  .main .section {
+    height: 35rem;
+  }
+  .main .section button:hover {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    margin: -1px;
+  }
+}
